@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FESTIVAL INFORMATION</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fffaf3;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(120deg, #ff512f, #dd2476);
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    font-size: 34px;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+/* NAVIGATION */
+nav {
+    background: #29213b;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 13px;
+    gap: 22px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffca55;
+}
+
+/* HERO */
+.hero {
+    min-height: 380px;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://commons.wikimedia.org/wiki/Special:FilePath/Indian_Holi_celebration.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.hero h2 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.hero a {
+    display: inline-block;
+    background: #ffb52e;
+    color: #222;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* GENERAL SECTIONS */
+section {
+    padding: 45px 6%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 29px;
+    color: #e64b35;
+    margin-bottom: 15px;
+}
+
+.intro {
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+    font-size: 17px;
+}
+
+/* FESTIVAL CARDS */
+.festival-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0,0,0,.12);
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    background: #eee;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card h3 {
+    color: #df4a36;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.card strong {
+    color: #29213b;
+}
+
+.tag {
+    display: inline-block;
+    background: #fff0db;
+    color: #b84923;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+/* SEARCH */
+.search-box {
+    max-width: 500px;
+    margin: 25px auto;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 14px;
+    border: 2px solid #e5a04a;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* ABOUT */
+.about {
+    background: #fff0dd;
+    text-align: center;
+}
+
+.about p {
+    max-width: 900px;
+    margin: 15px auto;
+}
+
+/* IMPORTANCE */
+.importance {
+    background: white;
+}
+
+.importance ul {
+    max-width: 750px;
+    margin: 20px auto;
+}
+
+.importance li {
+    padding: 8px;
+}
+
+/* FOOTER */
+footer {
+    background: #29213b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+@media(max-width:600px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    nav {
+        gap: 13px;
+    }
+
+    section {
+        padding: 35px 5%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>🎉 FESTIVAL INFORMATION 🎉</h1>
+    <p>Discover the Colours, Culture and Traditions of India</p>
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#festivals">Festivals</a>
+    <a href="#importance">Importance</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- HOME -->
+<div class="hero" id="home">
+    <div>
+        <h2>Welcome to the World of Festivals!</h2>
+        <p>Celebrate Unity, Happiness, Culture and Tradition.</p>
+        <a href="#festivals">Explore Festivals</a>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <h2 class="section-title">About Indian Festivals</h2>
+
+    <p>
+        India is a country known for its rich culture, traditions
+        and celebrations. Festivals are an important part of
+        Indian life. People from different religions, communities
+        and regions celebrate various festivals throughout the year.
+    </p>
+
+    <p>
+        Every festival has its own history, special food,
+        traditional clothing, rituals and celebrations.
+        Festivals bring families and communities together
+        and spread happiness, peace and unity.
+    </p>
+</section>
+
+<!-- FESTIVAL INFORMATION -->
+<section id="festivals">
+
+    <h2 class="section-title">Famous Indian Festivals</h2>
+
+    <p class="intro">
+        Explore some of the most popular festivals celebrated
+        across India and learn about their importance,
+        traditions and celebrations.
+    </p>
+
+    <div class="search-box">
+        <input type="text" id="search"
+        placeholder="🔍 Search for a festival..."
+        onkeyup="searchFestival()">
+    </div>
+
+    <div class="festival-container" id="festivalList">
+
+        <!-- PONGAL -->
+        <div class="card">
+            <img
+            src="c:\Users\Hemanth\OneDrive\Pictures\pongal.jpg"
+            alt="Traditional Pongal rice boiling in a clay pot"
+            loading="lazy">
+
+            <div class="card-content">
+                <span class="tag">Tamil Nadu</span>
+                <h3>🌾 Pongal</h3>
+                <p><strong>When:</strong> January</p>
+                <p>
+                    Pongal is a traditional harvest festival
+                    celebrated mainly in Tamil Nadu. It is a
+                    thanksgiving celebration for the Sun,
+                    farmers, cattle and nature.
+                </p>
+                <p><strong>Celebrations:</strong> People prepare
+                sweet Pongal in traditional clay pots. Rice
+                overflowing from the pot symbolizes prosperity.
+                Homes are decorated with kolam and sugarcane.</p>
+                <p><strong>Special Food:</strong> Sakkarai Pongal,
+                Ven Pongal and sugarcane.</p>
+            </div>
+        </div>
+
+        <!-- DIWALI -->
+        <div class="card">
+            <img
+            src="c:\Users\Hemanth\OneDrive\Pictures\diwali.webp"
+            alt="Diwali fireworks celebration"
+            loading="lazy">
+
+            <div class="card-content">
+                <span class="tag">Festival of Lights</span>
+                <h3>🪔 Diwali</h3>
+                <p><strong>When:</strong> October or November</p>
+                <p>
+                    Diwali is one of India's most famous
+                    festivals. It represents the victory
+                    of light over darkness and good over evil.
+                </p>
+                <p><strong>Celebrations:</strong> People decorate
+                their homes with diyas, colourful lights,
+                rangoli and flowers. Families exchange gifts
+                and sweets and celebrate together.</p>
+                <p><strong>Special Food:</strong> Ladoo,
+                Mysore Pak and traditional sweets.</p>
+            </div>
+        </div>
+
+        <!-- HOLI -->
+        <div class="card">
+            <img
+            src="c:\Users\Hemanth\OneDrive\Pictures\holi.jpg"
+            alt="People celebrating Holi with colours"
+            loading="lazy">
+
+            <div class="card-content">
+                <span class="tag">Festival of Colours</span>
+                <h3>🎨 Holi</h3>
+                <p><strong>When:</strong> March</p>
+                <p>
+                    Holi is a colourful festival mainly
+                    celebrated in northern India. It
+                    symbolizes love, happiness and the
+                    victory of good over evil.
+                </p>
+                <p><strong>Celebrations:</strong> People apply
+                coloured powders, enjoy music and dance,
+                and share happiness with friends and family.</p>
+                <p><strong>Special Food:</strong> Gujiya,
+                sweets and traditional drinks.</p>
+            </div>
+        </div>
+
+        <!-- EID -->
+        <div class="card">
+            <img
+            src="c:\Users\Hemanth\OneDrive\Pictures\eid.jpg"
+            alt="Eid celebration and festive shopping"
+            loading="lazy">
+
+            <div class="card-content">
+                <span class="tag">Festival of Togetherness</span>
+                <h3>🌙 Eid</h3>
+                <p><strong>When:</strong> Dates depend on the
+                Islamic lunar calendar.</p>
+                <p>
+                    Eid is an important festival celebrated
+                    by Muslims around the world. Eid al-Fitr
+                    marks the end of Ramadan, the month of fasting.
+                </p>
+                <p><strong>Celebrations:</strong> People offer
+                special prayers, wear new clothes, meet relatives
+                and share food with others.</p>
+                <p><strong>Special Food:</strong> Biryani,
+                Sheer Khurma and sweets.</p>
+            </div>
+        </div>
+
+        <!-- CHRISTMAS -->
+        <div class="card">
+            <img
+            src="c:\Users\Hemanth\OneDrive\Pictures\christmas.jpg"
+            alt="Christmas tree decorated with lights"
+            loading="lazy">
+
+            <div class="card-content">
+                <span class="tag">Festival of Joy</span>
+                <h3>🎄 Christmas</h3>
+                <p><strong>When:</strong> December 25</p>
+                <p>
+                    Christmas celebrates the birth of
+                    Jesus Christ. It is celebrated by
+                    Christians and enjoyed by many people
+                    around the world.
+                </p>
+                <p><strong>Celebrations:</strong> Churches
+                are decorated, Christmas trees are displayed,
+                carols are sung and gifts are exchanged.</p>
+                <p><strong>Special Food:</strong> Cakes,
+                cookies and festive meals.</p>
+            </div>
+        </div>
+
+        <!-- GANESH CHATURTHI -->
+        <div class="card">
+            <img
+            src="c:\Users\Hemanth\OneDrive\Pictures\ganess.jpg"
+            alt="Ganesh Chaturthi festival celebration"
+            loading="lazy">
+
+            <div class="card-content">
+                <span class="tag">Religious Festival</span>
+                <h3>🐘 Ganesh Chaturthi</h3>
+                <p><strong>When:</strong> August or September</p>
+                <p>
+                    Ganesh Chaturthi celebrates the birth
+                    of Lord Ganesha, who is worshipped as
+                    the remover of obstacles and the god
+                    of wisdom.
+                </p>
+                <p><strong>Celebrations:</strong> People
+                install decorated Ganesha idols, perform
+                prayers and participate in cultural events.</p>
+                <p><strong>Special Food:</strong> Modak
+                and Kozhukattai.</p>
+            </div>
+        </div>
+
+        <!-- ONAM -->
+        <div class="card">
+            <img
+            src="c:\Users\Hemanth\OneDrive\Pictures\onam.jpg"
+            alt="Onam festival celebration in Kerala"
+            loading="lazy">
+
+            <div class="card-content">
+                <span class="tag">Kerala</span>
+                <h3>🌸 Onam</h3>
+                <p><strong>When:</strong> August or September</p>
+                <p>
+                    Onam is the famous harvest festival
+                    of Kerala. It is associated with the
+                    legendary King Mahabali.
+                </p>
+                <p><strong>Celebrations:</strong> People
+                create flower decorations called Pookalam,
+                enjoy traditional dances, boat races
+                and family gatherings.</p>
+                <p><strong>Special Food:</strong> Onam Sadya,
+                served traditionally on a banana leaf.</p>
+            </div>
+        </div>
+
+        <!-- NAVRATRI -->
+        <div class="card">
+            <img
+            src="c:\Users\Hemanth\OneDrive\Pictures\navaratri.jpg"
+            alt="Navratri traditional Garba dance"
+            loading="lazy">
+
+            <div class="card-content">
+                <span class="tag">Nine Nights Festival</span>
+                <h3>💃 Navratri</h3>
+                <p><strong>When:</strong> September or October</p>
+                <p>
+                    Navratri is a nine-night festival
+                    dedicated to Goddess Durga and her
+                    different forms.
+                </p>
+                <p><strong>Celebrations:</strong> People
+                perform Garba and Dandiya dances, offer
+                prayers and wear colourful traditional clothes.</p>
+                <p><strong>Special Food:</strong> Traditional
+                vegetarian dishes and sweets.</p>
+            </div>
+        </div>
+
+        <!-- BAKRID -->
+        <div class="card">
+            <img
+            src="c:\Users\Hemanth\OneDrive\Pictures\bakrid'.jpg"
+            alt="Eid al-Adha celebration"
+            loading="lazy">
+
+            <div class="card-content">
+                <span class="tag">Festival of Sacrifice</span>
+                <h3>🌙 Bakrid</h3>
+                <p><strong>When:</strong> Dates depend on the
+                Islamic lunar calendar.</p>
+                <p>
+                    Bakrid, also called Eid al-Adha,
+                    is an important Islamic festival
+                    that teaches faith, generosity
+                    and helping others.
+                </p>
+                <p><strong>Celebrations:</strong> Families
+                attend special prayers, share food and
+                give to people in need.</p>
+                <p><strong>Special Food:</strong> Biryani
+                and traditional festive dishes.</p>
+            </div>
+        </div>
+
+        <!-- INDEPENDENCE DAY -->
+        <div class="card">
+            <img
+            src="c:\Users\Hemanth\OneDrive\Pictures\independence.jpg"
+            alt="Indian Independence Day celebration"
+            loading="lazy">
+
+            <div class="card-content">
+                <span class="tag">National Celebration</span>
+                <h3>🇮🇳 Independence Day</h3>
+                <p><strong>When:</strong> August 15</p>
+                <p>
+                    Independence Day celebrates India's
+                    freedom from British rule in 1947.
+                    It reminds us of the sacrifices made
+                    by freedom fighters.
+                </p>
+                <p><strong>Celebrations:</strong> The national
+                flag is hoisted, patriotic songs are sung
+                and cultural programmes are conducted
+                in schools and colleges.</p>
+                <p><strong>Special:</strong> Flag hoisting
+                and patriotic activities.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- IMPORTANCE -->
+<section class="importance" id="importance">
+
+    <h2 class="section-title">Importance of Festivals</h2>
+
+    <p class="intro">
+        Festivals are more than celebrations.
+        They play an important role in our society.
+    </p>
+
+    <ul>
+        <li>🎉 They bring families and friends together.</li>
+        <li>🤝 They promote unity and friendship.</li>
+        <li>🌍 They preserve our culture and traditions.</li>
+        <li>❤️ They spread happiness, peace and love.</li>
+        <li>🎭 They encourage art, music and cultural activities.</li>
+        <li>🍲 They help preserve traditional food and customs.</li>
+    </ul>
+</section>
+
+<!-- CONTACT -->
+<section class="about" id="contact">
+    <h2 class="section-title">Thank You for Visiting!</h2>
+    <p>
+        Festivals make our lives colourful and meaningful.
+        Let us respect every culture and celebrate the
+        diversity of our country.
+    </p>
+    <p><strong>Unity in Diversity – Incredible India!</strong></p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>🎊 FESTIVAL INFORMATION 🎊</p>
+    <p>Indian Culture | Traditions | Celebrations</p>
+    <p>© 2026 Festival Information Website</p>
+</footer>
+
+<!-- SEARCH FUNCTION -->
+<script>
+function searchFestival() {
+
+    let input = document.getElementById("search")
+        .value.toLowerCase();
+
+    let cards = document.querySelectorAll(".card");
+
+    cards.forEach(function(card) {
+
+        let text = card.innerText.toLowerCase();
+
+        if (text.includes(input)) {
+            card.style.display = "block";
+        } else {
+            card.style.display = "none";
+        }
+
+    });
+}
+</script>
+
+</body>
+</html
